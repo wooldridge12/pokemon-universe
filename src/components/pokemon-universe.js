@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import PokemonThumbnail from './pokemonThumbnail';
 
 function PokemonUniverse() {
 
@@ -30,8 +31,8 @@ function PokemonUniverse() {
         // we are passing data.result which you can see in the dev tools
         createPokemonObject(data.results)
         
-        await console.log(allPokemon)
         // console.log(data)
+        await console.log(allPokemon)
     }
 
     useEffect(() => {
@@ -39,12 +40,19 @@ function PokemonUniverse() {
     }, [])
     
     return(
-        <div>
+        <div className='appContainer'>
             <h1>Mikey's Pokemon App!</h1>
-
             <div className='pokemonContainer'>
                 <div className='allPokemonContainer'>
-
+                    { allPokemon.map((pokemon, index) => 
+                        <PokemonThumbnail
+                        id={pokemon.id}
+                        name={pokemon.name}
+                        image={pokemon.sprites.other.dream_world.front_default}
+                        type={pokemon.types[0].type.name}
+                        key={index}
+                        />
+                        )}
                 </div>
                 <button className='loadMore'>Load More</button>
             </div>
