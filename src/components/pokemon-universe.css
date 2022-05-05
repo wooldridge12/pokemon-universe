@@ -1,0 +1,21 @@
+.appContainer {
+    margin: 5%;
+}
+
+.pokemonCard {
+    border: solid black 5px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 2%;
+}
+
+.pokemonName {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.pokemonType {
+    margin-bottom: 10%;
+}
