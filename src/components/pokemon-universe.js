@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import './pokemon-universe.css';
 
 function PokemonUniverse() {
 
@@ -44,13 +45,14 @@ function PokemonUniverse() {
             <div className='pokemonContainer'>
                 <div className='allPokemonContainer'>
                     { allPokemon.map((pokemon, index) => 
-                        <section key={`pokemon--${index}`}> 
-                            <div>{pokemon.name}</div>
+                        <section key={`pokemon--${index}`} className='pokemonCard'> 
+                            <div className='pokemonName'>{pokemon.name}</div>
+                            <div className='pokemonType'>Type: {pokemon.types[0].type.name}</div>
                             <img src={pokemon.sprites.other.dream_world.front_default} />
                         </section>
                         )}
                 </div>
-                <button className='loadMore'>Load More</button>
+                <button className='loadMore' onClick={() => getAllPokemon()}>Load More</button>
             </div>
         </div>
     )
