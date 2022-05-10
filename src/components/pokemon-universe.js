@@ -44,14 +44,17 @@ function PokemonUniverse() {
             <h1>Mikey's Pokemon App!</h1>
             <div className='pokemonContainer'>
                 <div className='allPokemonContainer'>
-                    { allPokemon.map((pokemon, index) => 
+                {/* Thos works!!! */}
+                    {/* { allPokemon.map((pokemon, index) => 
                         <section key={`pokemon--${index}`} className='pokemonCard'> 
                             <div className='pokemonName'>{pokemon.name}</div>
                             <div className='pokemonType'>Type: {pokemon.types[0].type.name}</div>
                             <img src={pokemon.sprites.other.dream_world.front_default} />
                         </section>
-                        )}
+                        )} */}
                 </div>
+
+
                 <button className='loadMore' onClick={() => getAllPokemon()}>Load More</button>
             </div>
         </div>
