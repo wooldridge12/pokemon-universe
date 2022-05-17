@@ -45,9 +45,11 @@ function PokemonUniverse() {
             <h1>Mikey's Pokemon App!</h1>
             <div className='pokemonContainer'>
                 <div className='allPokemonContainer'>
-                {/* Thos works!!! */}
+                
+                {/* This works!!! */}
                     {/* { allPokemon.map((pokemon, index) => 
                         <section key={`pokemon--${index}`} className='pokemonCard'> 
+                            <small>#0{index}</small>
                             <div className='pokemonName'>{pokemon.name}</div>
                             <div className='pokemonType'>Type: {pokemon.types[0].type.name}</div>
                             <img src={pokemon.sprites.other.dream_world.front_default} />
