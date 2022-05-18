@@ -2,8 +2,12 @@
     margin: 5%;
 }
 
+img {
+    width: 20rem;
+    height: 20rem;
+}
+
 .pokemonCard {
-    border: solid black 5px;
     width: fit-content;
     align-items: center;
     justify-content: center;
@@ -11,6 +15,7 @@
     padding: 2%;
 }
 
+/* Pokemon Types Backgrounds */
 .pokemonName {
     font-size: large;
     font-weight: bolder;
@@ -19,6 +24,73 @@
 .pokemonType {
     margin-bottom: 10%;
 }
+
 .fire {
     background-color: orange;
+    width: fit-content;
+}
+.water {
+    background-color: blue;
+    width: fit-content;
+}
+.grass {
+    background-color: green;
+    width: fit-content;
+}
+.bug {
+    background-color: greenyellow;
+    width: fit-content;
+}
+.electric {
+    background-color: yellow;
+    width: fit-content;
+}
+.poison {
+    background-color: purple;
+    width: fit-content;
+}
+.ground {
+    background-color: rgba(76, 33, 5, 0.737);
+    width: fit-content;
+}
+.fairy {
+    background-color: pink;
+    width: fit-content;
+}
+.normal {
+    background-color: rgb(173, 169, 169);
+    width: fit-content;
+}
+.fighting {
+    background-color: brown;
+    width: fit-content;
+}
+.psychic {
+    background-color: hotpink;
+    width: fit-content;
+}
+.rock {
+    background-color: darkkhaki;
+    width: fit-content;
+}
+.ice {
+    background-color: aqua;
+    width: fit-content;
+}
+.dragon {
+    background-color: rgb(139, 36, 150);
+    width: fit-content;
+}
+.dark {
+    background-color: black;
+    width: fit-content;
+    color: aliceblue;
+}
+.ghost {
+    background-color: blueviolet;
+    width: fit-content;
+}
+.steel {
+    background-color: silver;
+    width: fit-content;
 }
